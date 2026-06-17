@@ -81,8 +81,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5%;
-    max-width: 1400px;
+    padding: 0 8%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -224,7 +224,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 8rem 5% 5rem;
+    padding: 8rem 8% 5rem;
     overflow: hidden;
 }
 
@@ -338,7 +338,7 @@ body {
 .stats-strip {
     display: flex;
     justify-content: space-around;
-    padding: 3rem 5%;
+    padding: 3rem 8%;
     background: var(--bg-glass);
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
@@ -375,8 +375,8 @@ body {
    SECTIONS & TYPOGRAPHY
 ════════════════════════════════════════ */
 .section {
-    padding: 8rem 5%;
-    max-width: 1400px;
+    padding: 8rem 8%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -575,7 +575,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6rem 5%;
+    padding: 6rem 8%;
     position: relative;
 }
 
@@ -624,14 +624,14 @@ body {
 .footer {
     background: #050505;
     border-top: 1px solid var(--border);
-    padding: 5rem 5% 2rem;
+    padding: 5rem 8% 2rem;
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1.5fr;
     gap: 4rem;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 4rem;
 }
@@ -660,7 +660,7 @@ body {
     justify-content: space-between;
     color: var(--text-muted);
     font-size: 0.9rem;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -690,8 +690,8 @@ body {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    padding: 1.2rem 5%;
-    max-width: 1400px;
+    padding: 1.2rem 8%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -749,14 +749,14 @@ body {
    PROMO SECTION (Deals)
 ════════════════════════════════════════ */
 .promo-section {
-    padding: 8rem 5% 4rem;
+    padding: 8rem 8% 4rem;
 }
 
 .promo-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 5%;
+    padding: 4rem 8%;
     border-radius: var(--radius-lg);
     gap: 3rem;
     position: relative;
@@ -874,8 +874,8 @@ body {
         flex-direction: column;
         position: absolute;
         top: 100%;
-        left: 5%;
-        right: 5%;
+        left: 8%;
+        right: 8%;
         background: var(--bg-glass);
         padding: 2rem;
         border-radius: var(--radius-md);
@@ -903,7 +903,7 @@ body {
     .hero-content { margin: 0 auto; }
     .hero-title { font-size: clamp(2.5rem, 10vw, 3.5rem); }
     .hero-buttons { justify-content: center; }
-    .section { padding: 4rem 5%; }
+    .section { padding: 4rem 8%; }
     .auth-card { padding: 2rem; }
     .nav-actions { gap: 0.5rem; }
     .icon-btn, .cart-btn { width: 40px; height: 40px; }
@@ -948,7 +948,7 @@ body {
 
 .featured-info-box {
     flex: 1.2;
-    padding: 4rem 5%;
+    padding: 4rem 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1080,4 +1080,41 @@ body {
     .featured-info-box { padding: 3rem 5%; }
     .featured-checkout { flex-direction: column; align-items: stretch; gap: 1rem; }
     .delivery-note { text-align: center; }
+}
+
+.featured-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    scrollbar-width: none;
+}
+.featured-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.featured-inner {
+    min-width: 100%;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+}
+
+.scroll-indicator {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: -1rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
 }
