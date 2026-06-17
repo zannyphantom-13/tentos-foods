@@ -836,3 +836,75 @@ body {
     .promo-right { margin-top: 2rem; }
     .promo-code-box { margin: 0 auto; }
 }
+
+/* ════════════════════════════════════════
+   RESPONSIVE DESIGN (Mobile & Tablet)
+════════════════════════════════════════ */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-main);
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.hamburger.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+
+@media (max-width: 1024px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .nav-actions .order-btn { display: none; }
+
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        right: 5%;
+        background: var(--bg-glass);
+        padding: 2rem;
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-heavy);
+        border: 1px solid var(--border);
+        backdrop-filter: blur(20px);
+        margin-top: 10px;
+    }
+    
+    .nav-links.open li { width: 100%; text-align: center; }
+    .nav-links.open a { display: block; padding: 1rem; font-size: 1.1rem; }
+
+    .footer-grid { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+    .stats-strip { flex-wrap: wrap; gap: 2rem; }
+    .stat-item { width: 40%; }
+    
+    .search-inner { flex-direction: column; align-items: stretch; }
+    .search-cat, .search-input, .search-go { width: 100%; }
+    .search-bar-drop.open { max-height: 300px; }
+}
+
+@media (max-width: 768px) {
+    .stat-item { width: 100%; }
+    .hero { padding-top: 8rem; text-align: center; }
+    .hero-content { margin: 0 auto; }
+    .hero-title { font-size: clamp(2.5rem, 10vw, 3.5rem); }
+    .hero-buttons { justify-content: center; }
+    .section { padding: 4rem 5%; }
+    .auth-card { padding: 2rem; }
+    .nav-actions { gap: 0.5rem; }
+    .icon-btn, .cart-btn { width: 40px; height: 40px; }
+}
