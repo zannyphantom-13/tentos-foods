@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import heroImg from '../assets/images/hero.png';
+import FeaturedProduct from '../components/FeaturedProduct';
 
 function Home() {
   const containerVariants = {
@@ -76,6 +77,8 @@ function Home() {
             <span className="stat-label">Customer Rating</span>
         </div>
       </motion.div>
+
+      <FeaturedProduct />
 
       <section className="section" id="why">
         <motion.div 
