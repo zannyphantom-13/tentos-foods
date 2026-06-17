@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Tentos Foods Variety – Your one-stop shop for fresh, quality foodstuff in Nigeria. Rice, beans, palm oil, spices, grains, and more delivered to your door." />
+    <meta name="keywords"
+        content="Tentos Foods, foodstuff, rice, beans, garri, palm oil, spices, grains, crayfish, tomatoes, Nigeria, grocery store, foodstuff delivery" />
+    <meta property="og:title" content="Tentos Foods Variety | Quality Foodstuff, Delivered Fresh" />
+    <meta property="og:description"
+        content="Shop fresh, quality foodstuff online — rice, beans, oils, spices, grains and more. Delivered straight to your door across Nigeria." />
+    <title>Tentos Foods Variety | Quality Foodstuff, Delivered Fresh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- ══════════════════════ NAVBAR ══════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" aria-label="Tentos Foods Home">
+                <div class="logo-badge">👨‍🍳</div>
+                <div class="logo-text">
+                    <span class="logo-tentos">Tentos</span>
+                    <span class="logo-foods">foods</span>
+                    <span class="logo-variety">• variety •</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#deals">Deals</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="search-toggle" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
+                <button class="icon-btn" aria-label="Wishlist">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </button>
+                <button class="cart-btn" id="cart-btn" aria-label="Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <a href="#products" class="order-btn">Shop Now</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <!-- Search Drop -->
+        <div class="search-bar-drop" id="search-bar-drop">
+            <div class="search-inner">
+                <select class="search-cat" id="search-category" aria-label="Category">
+                    <option>All Categories</option>
+                    <option>Rice &amp; Grains</option>
+                    <option>Beans &amp; Legumes</option>
+                    <option>Cooking Oils</option>
+                    <option>Spices &amp; Seasonings</option>
+                    <option>Tomatoes &amp; Peppers</option>
+                    <option>Fish &amp; Seafood</option>
+                    <option>Tubers &amp; Roots</option>
+                    <option>Flour &amp; Starch</option>
+                </select>
+                <input type="search" class="search-input" id="main-search" placeholder="Search rice, beans, palm oil, spices…" autocomplete="off" />
+                <button class="search-go" id="search-btn" aria-label="Search">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ══════════════════════ HERO ══════════════════════ -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge-pill">🌾 Farm Fresh · Straight to Your Door</div>
+            <h1 class="hero-title">
+                Your Favourite<br />
+                <span class="hero-accent">Foodstuff.</span><br />
+                Always Fresh.
+            </h1>
+            <p class="hero-sub">Rice, beans, palm oil, spices, grains and more — sourced directly from trusted farmers and delivered fresh across Nigeria.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn-orange">Shop Foodstuff</a>
+                <a href="#categories" class="btn-green-outline">Browse Categories</a>
+            </div>
+            <div class="hero-trust">
+                <div class="trust-item"><span class="trust-icon">🌾</span><span>Farmer Sourced</span></div>
+                <div class="trust-item"><span class="trust-icon">✅</span><span>Quality Guaranteed</span></div>
+                <div class="trust-item"><span class="trust-icon">🚚</span><span>Nationwide Delivery</span></div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-plate">
+                <div class="plate-ring"></div>
+                <div class="plate-center">🌾</div>
+                <div class="floating-tag tag-1">Local Rice<br/><strong>₦85,000/bag</strong></div>
+                <div class="floating-tag tag-2">Palm Oil<br/><strong>₦12,500/tin</strong></div>
+                <div class="floating-tag tag-3">Dried Pepper<br/><strong>₦3,200/kg</strong></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════ STATS STRIP ══════════════════════ -->
+    <div class="stats-strip">
+        <div class="stat-item">
+            <span class="stat-num">200<span class="stat-plus">+</span></span>
+            <span class="stat-label">Foodstuff Items</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-num">15k<span class="stat-plus">+</span></span>
+            <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-num">36<span class="stat-plus">+</span></span>
+            <span class="stat-label">States Covered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-num">4.8<span class="stat-plus">⭐</span></span>
+            <span class="stat-label">Customer Rating</span>
+        </div>
+    </div>
+
+    <!-- ══════════════════════ CATEGORIES ══════════════════════ -->
+    <section class="section" id="categories">
+        <div class="section-head">
+            <p class="section-eyebrow">Browse by Category</p>
+            <h2 class="section-title">What Do You Need Today?</h2>
+            <p class="section-sub">From whole grains to bottled oils — every staple your kitchen needs, always in stock.</p>
+        </div>
+        <div class="categories-grid">
+            <div class="cat-card">
+                <div class="cat-emoji">🌾</div>
+                <h3 class="cat-name">Rice &amp; Grains</h3>
+                <p class="cat-count">Local, foreign &amp; parboiled</p>
+            </div>
+            <div class="cat-card">
+                <div class="cat-emoji">🫘</div>
+                <h3 class="cat-name">Beans &amp; Legumes</h3>
+                <p class="cat-count">Oloyin, brown, black-eyed</p>
+            </div>
+            <div class="cat-card">
+                <div class="cat-emoji">🫙</div>
+                <h3 class="cat-name">Cooking Oils</h3>
+                <p class="cat-count">Palm oil, groundnut, soya</p>
+            </div>
+            <div class="cat-card">
+                <div class="cat-emoji">🌶️</div>
+                <h3 class="cat-name">Spices &amp; Seasonings</h3>
+                <p class="cat-count">Pepper, crayfish, curry</p>
+            </div>
+            <div class="cat-card">
+                <div class="cat-emoji">🍅</div>
+                <h3 class="cat-name">Tomatoes &amp; Peppers</h3>
+                <p class="cat-count">Fresh, dried &amp; paste</p>
+            </div>
+            <div class="cat-card">
+                <div class="cat-emoji">🐟</div>
+                <h3 class="cat-name">Fish &amp; Seafood</h3>
+                <p class="cat-count">Stockfish, crayfish, smoked</p>
+            </div>
+            <div class="cat-card">
+                <div class="cat-emoji">🍠</div>
+                <h3 class="cat-name">Tubers &amp; Roots</h3>
+                <p class="cat-count">Yam, cassava, cocoyam</p>
+            </div>
+            <div class="cat-card">
+                <div class="cat-emoji">🌽</div>
+                <h3 class="cat-name">Flour &amp; Starch</h3>
+                <p class="cat-count">Garri, wheat, semolina, eba</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════ PRODUCTS ══════════════════════ -->
+    <section class="section section-alt" id="products">
+        <div class="section-head">
+            <p class="section-eyebrow">Our Bestsellers</p>
+            <h2 class="section-title">Popular Foodstuff</h2>
+            <p class="section-sub">Our most purchased staples — bulk or retail, always the freshest quality.</p>
+        </div>
+        <div class="dishes-grid">
+
+            <article class="dish-card" id="prod-rice">
+                <div class="dish-img dish-img-1">🌾</div>
+                <div class="dish-body">
+                    <span class="dish-tag">Grains</span>
+                    <h3 class="dish-name">Local White Rice</h3>
+                    <p class="dish-desc">Premium Nigerian local rice — well-parboiled, stone-free, and cleaned. Available in 5kg, 10kg &amp; 50kg bags.</p>
+                    <div class="dish-footer">
+                        <div>
+                            <span class="dish-price">₦8,500</span>
+                            <span class="dish-unit">/10kg</span>
+                        </div>
+                        <button class="add-to-cart" id="add-rice" onclick="addToCart(this,'Local White Rice',8500)">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dish-card" id="prod-beans">
+                <div class="dish-img dish-img-2">🫘</div>
+                <div class="dish-body">
+                    <span class="dish-tag">Legumes</span>
+                    <h3 class="dish-name">Oloyin Honey Beans</h3>
+                    <p class="dish-desc">Sweet, tender oloyin beans hand-sorted and sun-dried. Perfect for porridge, moin moin and akara.</p>
+                    <div class="dish-footer">
+                        <div>
+                            <span class="dish-price">₦6,200</span>
+                            <span class="dish-unit">/5kg</span>
+                        </div>
+                        <button class="add-to-cart" id="add-beans" onclick="addToCart(this,'Oloyin Beans',6200)">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dish-card" id="prod-palmoil">
+                <div class="dish-img dish-img-3">🫙</div>
+                <div class="dish-body">
+                    <span class="dish-tag">Cooking Oil</span>
+                    <h3 class="dish-name">Fresh Red Palm Oil</h3>
+                    <p class="dish-desc">Pure, unrefined palm oil sourced directly from local mills. Rich colour, full flavour. Available in 1L, 5L &amp; 25L.</p>
+                    <div class="dish-footer">
+                        <div>
+                            <span class="dish-price">₦12,500</span>
+                            <span class="dish-unit">/5L tin</span>
+                        </div>
+                        <button class="add-to-cart" id="add-palmoil" onclick="addToCart(this,'Red Palm Oil',12500)">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dish-card" id="prod-garri">
+                <div class="dish-img dish-img-4">🌽</div>
+                <div class="dish-body">
+                    <span class="dish-tag">Flour &amp; Starch</span>
+                    <h3 class="dish-name">Yellow Garri (Ijebu)</h3>
+                    <p class="dish-desc">Crispy, fine-grain Ijebu garri — sieved and dried to perfection. Great for eba, soaking or snacking.</p>
+                    <div class="dish-footer">
+                        <div>
+                            <span class="dish-price">₦4,500</span>
+                            <span class="dish-unit">/5kg</span>
+                        </div>
+                        <button class="add-to-cart" id="add-garri" onclick="addToCart(this,'Ijebu Garri',4500)">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dish-card" id="prod-crayfish">
+                <div class="dish-img dish-img-5">🐟</div>
+                <div class="dish-body">
+                    <span class="dish-tag">Spices</span>
+                    <h3 class="dish-name">Ground Crayfish</h3>
+                    <p class="dish-desc">Sun-dried, freshly ground crayfish — the essential Nigerian cooking spice. Adds depth to all soups and stews.</p>
+                    <div class="dish-footer">
+                        <div>
+                            <span class="dish-price">₦3,800</span>
+                            <span class="dish-unit">/500g</span>
+                        </div>
+                        <button class="add-to-cart" id="add-crayfish" onclick="addToCart(this,'Ground Crayfish',3800)">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dish-card" id="prod-pepper">
+                <div class="dish-img dish-img-6">🌶️</div>
+                <div class="dish-body">
+                    <span class="dish-tag">Spices</span>
+                    <h3 class="dish-name">Dried Tatashe &amp; Shombo</h3>
+                    <p class="dish-desc">A blend of sun-dried tatashe and shombo peppers, coarsely ground. Adds bold colour and heat to any dish.</p>
+                    <div class="dish-footer">
+                        <div>
+                            <span class="dish-price">₦3,200</span>
+                            <span class="dish-unit">/kg</span>
+                        </div>
+                        <button class="add-to-cart" id="add-pepper" onclick="addToCart(this,'Dried Pepper',3200)">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dish-card" id="prod-stockfish">
+                <div class="dish-img dish-img-1">🐠</div>
+                <div class="dish-body">
+                    <span class="dish-tag">Fish</span>
+                    <h3 class="dish-name">Norwegian Stockfish</h3>
+                    <p class="dish-desc">Imported, well-dried stockfish heads and body pieces. The key ingredient in authentic Nigerian soups.</p>
+                    <div class="dish-footer">
+                        <div>
+                            <span class="dish-price">₦18,000</span>
+                            <span class="dish-unit">/kg</span>
+                        </div>
+                        <button class="add-to-cart" id="add-stockfish" onclick="addToCart(this,'Stockfish',18000)">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dish-card" id="prod-yam">
+                <div class="dish-img dish-img-2">🍠</div>
+                <div class="dish-body">
+                    <span class="dish-tag">Tubers</span>
+                    <h3 class="dish-name">Puna Yam (Tubers)</h3>
+                    <p class="dish-desc">Large, firm, freshly harvested puna yam from Benue. Perfect for pounded yam, yam porridge and frying.</p>
+                    <div class="dish-footer">
+                        <div>
+                            <span class="dish-price">₦5,500</span>
+                            <span class="dish-unit">/tuber</span>
+                        </div>
+                        <button class="add-to-cart" id="add-yam" onclick="addToCart(this,'Puna Yam',5500)">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dish-card" id="prod-semolina">
+                <div class="dish-img dish-img-3">🌾</div>
+                <div class="dish-body">
+                    <span class="dish-tag">Flour</span>
+                    <h3 class="dish-name">Semolina (1kg &amp; 2kg)</h3>
+                    <p class="dish-desc">Finely milled Nigerian semolina — smooth, lump-free, and easy to cook. Available in 1kg and 2kg packs.</p>
+                    <div class="dish-footer">
+                        <div>
+                            <span class="dish-price">₦1,800</span>
+                            <span class="dish-unit">/1kg pack</span>
+                        </div>
+                        <button class="add-to-cart" id="add-semolina" onclick="addToCart(this,'Semolina',1800)">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════ PROMO BANNER ══════════════════════ -->
+    <section class="promo-section" id="deals">
+        <div class="promo-inner">
+            <div class="promo-left">
+                <p class="promo-eyebrow">Limited Time Offer 🎉</p>
+                <h2 class="promo-title">First Order? Get <span>20% Off!</span></h2>
+                <p class="promo-sub">Use the code below at checkout. Stock your kitchen with quality Nigerian foodstuff at a special price — one time only.</p>
+                <div class="promo-code-box">
+                    <span class="promo-code" id="promo-code">TENTOS20</span>
+                    <button class="copy-btn" id="copy-btn" onclick="copyCode()">Copy Code</button>
+                </div>
+            </div>
+            <div class="promo-right">
+                <div class="promo-food-stack">
+                    <span>🌾</span>
+                    <span>🫘</span>
+                    <span>🫙</span>
+                    <span>🌶️</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════ WHY TENTOS ══════════════════════ -->
+    <section class="section" id="why">
+        <div class="section-head">
+            <p class="section-eyebrow">Why Choose Us</p>
+            <h2 class="section-title">The Tentos Difference</h2>
+            <p class="section-sub">We're not just selling foodstuff — we're committed to quality, freshness, and trust.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🌾</div>
+                <h3>Direct from Farmers</h3>
+                <p>We source all our foodstuff directly from vetted local farmers — no middlemen, no compromise on freshness.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✅</div>
+                <h3>Quality Checked</h3>
+                <p>Every product is inspected before packing — stone-free, pest-free, and stored in hygienic conditions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚖️</div>
+                <h3>Accurate Measurements</h3>
+                <p>You get exactly what you pay for. Every kilogram, every litre — measured and sealed before delivery.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚚</div>
+                <h3>Nationwide Delivery</h3>
+                <p>We deliver across all 36 states in Nigeria. Bulk orders welcome — the more you buy, the more you save.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════ TESTIMONIALS ══════════════════════ -->
+    <section class="section section-alt" id="reviews">
+        <div class="section-head">
+            <p class="section-eyebrow">Customer Love ❤️</p>
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-sub">Real feedback from real households and businesses across Nigeria.</p>
+        </div>
+        <div class="testi-grid">
+            <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">"The palm oil was so fresh and pure — you can tell it's straight from the mill. No more buying substandard oil from the market. I now order every month!"</p>
+                <div class="testi-author">
+                    <div class="testi-avatar" style="background:linear-gradient(135deg,#ff6a00,#ee0979)">N</div>
+                    <div>
+                        <strong>Ngozi Eze</strong>
+                        <span>Enugu, Nigeria</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">"Bought 50kg of local rice and it was stone-free and properly parboiled. My whole family noticed the difference. Tentos Foods is 100% reliable!"</p>
+                <div class="testi-author">
+                    <div class="testi-avatar" style="background:linear-gradient(135deg,#3a8c1c,#52b788)">T</div>
+                    <div>
+                        <strong>Taiwo Afolabi</strong>
+                        <span>Ibadan, Nigeria</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">"I run a restaurant and I order my crayfish and spices from Tentos every week. The quality is always consistent. My customers can always taste the difference!"</p>
+                <div class="testi-author">
+                    <div class="testi-avatar" style="background:linear-gradient(135deg,#f4a261,#e07a2f)">A</div>
+                    <div>
+                        <strong>Aisha Mohammed</strong>
+                        <span>Abuja, Nigeria</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════ FOOTER ══════════════════════ -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-tentos">Tentos</span>
+                        <span class="logo-foods" style="color:#52b788">foods</span>
+                    </div>
+                    <p>Your trusted source for fresh, quality Nigerian foodstuff — sourced from local farmers and delivered across the nation since 2020.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="WhatsApp" class="social-link">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.998 2.003C6.476 2.003 2 6.479 2 12.002c0 1.77.462 3.432 1.268 4.876L2 22l5.283-1.383A9.953 9.953 0 0 0 11.998 22c5.521 0 9.997-4.476 9.997-9.998s-4.476-9.999-9.997-9.999z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Our Products</h4>
+                    <ul>
+                        <li><a href="#products">Rice &amp; Grains</a></li>
+                        <li><a href="#products">Beans &amp; Legumes</a></li>
+                        <li><a href="#products">Cooking Oils</a></li>
+                        <li><a href="#products">Spices &amp; Seasonings</a></li>
+                        <li><a href="#products">Fish &amp; Seafood</a></li>
+                        <li><a href="#products">Tubers &amp; Roots</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#deals">Deals &amp; Offers</a></li>
+                        <li><a href="#reviews">Customer Reviews</a></li>
+                        <li><a href="/about.html">Our Story</a></li>
+                        <li><a href="/bulk.html">Bulk Orders</a></li>
+                        <li><a href="/faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get in Touch</h4>
+                    <address>
+                        <p>📍 14 Market Road, Onitsha,<br />Anambra State, Nigeria</p>
+                        <p><a href="tel:+2348012345678">📞 +234 801 234 5678</a></p>
+                        <p><a href="mailto:hello@tentosfoods.com">✉️ hello@tentosfoods.com</a></p>
+                        <p><a href="https://wa.me/2348012345678">💬 Chat us on WhatsApp</a></p>
+                        <p>⏰ Mon–Sat: 7am – 7pm</p>
+                    </address>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tentos Foods Variety. All rights reserved.</p>
+                <p>Made with ❤️ in Nigeria 🇳🇬</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script>
+        // Search toggle
+        document.getElementById('search-toggle').addEventListener('click', () => {
+            const drop = document.getElementById('search-bar-drop');
+            drop.classList.toggle('open');
+            if (drop.classList.contains('open')) document.getElementById('main-search').focus();
+        });
+
+        // Hamburger
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('open');
+            this.classList.toggle('active');
+        });
+
+        // Sticky nav
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+        });
+
+        // Cart
+        let cartCount = 0;
+        function addToCart(btn, name, price) {
+            cartCount++;
+            document.getElementById('cart-count').textContent = cartCount;
+            showToast('🛒 ' + name + ' added to cart!');
+            btn.textContent = '✓ Added';
+            btn.style.background = '#3a8c1c';
+            setTimeout(() => { btn.textContent = '+ Add'; btn.style.background = ''; }, 2200);
+        }
+
+        // Toast
+        function showToast(msg) {
+            const t = document.getElementById('toast');
+            t.textContent = msg;
+            t.classList.add('show');
+            setTimeout(() => t.classList.remove('show'), 3000);
+        }
+
+        // Copy code
+        function copyCode() {
+            navigator.clipboard.writeText('TENTOS20').then(() => {
+                const btn = document.getElementById('copy-btn');
+                btn.textContent = '✓ Copied!';
+                showToast('🎉 Code TENTOS20 copied!');
+                setTimeout(() => btn.textContent = 'Copy Code', 2500);
+            });
+        }
+    </script>
+</body>
+
+</html>
